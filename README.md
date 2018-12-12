@@ -17,7 +17,7 @@ abb_experimental/abb_irb1600_support/meshes/irb1600_6_12/collision/link_2.stl
 abb_experimental/abb_irb1600_support/meshes/irb1600_6_12/visual/link_2.stl
 ```
 
-The first 3 files I edited myself. The second 3 files will need to be looked at more in depth. The .xacro file can be modified for the longer link 2, but that does not fix the collisions and visualization. Those need to be fixed by an .stl file editor.
+The first 3 files I edited myself. I left the original files alone and appended a `_original` to the end of the filename. The second 3 files will need to be looked at more in depth. The .xacro file can be modified for the longer link 2, but that does not fix the collisions and visualization. Those need to be fixed by an .stl file editor.
 
 # The Original Docs
 
