@@ -19,6 +19,10 @@ abb_experimental/abb_irb1600_support/meshes/irb1600_6_12/visual/link_2.stl
 
 The first 3 files I edited myself. I left the original files alone and appended a `_original` to the end of the filename. The second 3 files will need to be looked at more in depth. The .xacro file can be modified for the longer link 2, but that does not fix the collisions and visualization. Those need to be fixed by an .stl file editor.
 
+This [is the link](https://new.abb.com/products/robotics/industrial-robots/irb-1600/irb-1600-data) that contains robot dimensions for the corrected .xacro file.
+
+I have also copied the version of the manual that I am referencing into this repo.
+
 # The Original Docs
 
 [![support level: community](https://img.shields.io/badge/support%20level-community-lightgray.png)](http://rosindustrial.org/news/2016/10/7/better-supporting-a-growing-ros-industrial-software-platform)
