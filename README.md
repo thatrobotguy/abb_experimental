@@ -2,7 +2,22 @@
 
 ## The changes
 
-This package was written for both the 1.2 meter variant as well as the 1.45 meter variant in mind. The problem is that they did not actually create the .urdf model and .stl model for the 1.45 meter variant. This original repo is also missing the edits I created for the tutorial for WPI's ABB 1600 1.45 variant, so I have decided to just fork this repo and make the changes on this version instead of the original version. This version corresponds to the tutorial that I wrote, so, in case I missed something, the user should not have to edit any of the files that I mention in that tutorial. Anyways, here is the original documentation below
+This package was written for both the 1.2 meter variant as well as the 1.45 meter variant in mind. The problem is that they did not actually create the .urdf model and .stl model for the 1.45 meter variant. This original repo is also missing the edits I created for the tutorial for WPI's ABB 1600 1.45 variant, so I have decided to just fork this repo and make the changes on this version instead of the original version. This version corresponds to the tutorial that I wrote, so, in case I missed something, the user should not have to edit any of the files that I mention in that tutorial.
+
+### Files edited from the original repository for branch kinetic-devel
+```
+abb_experimental/abb_irb1600_6_12_moveit_config/launch/trajectory_execution.launch.xml
+abb_experimental/abb_irb1600_6_12_moveit_config/launch/moveit_planning_execution.launch
+abb_experimental/abb_irb1600_support/launch/robot_interface_download_irb1600_6_12.launch
+```
+Then, these are the .urdf (.xacro) and .stl files that need to be edited:
+```
+abb_experimental/abb_irb1600_support/urdf/irb1600_6_12_macro.xacro
+abb_experimental/abb_irb1600_support/meshes/irb1600_6_12/collision/link_2.stl
+abb_experimental/abb_irb1600_support/meshes/irb1600_6_12/visual/link_2.stl
+```
+
+The first 3 files I edited myself. The second 3 files will need to be looked at more in depth. The .xacro file can be modified for the longer link 2, but that does not fix the collisions and visualization. Those need to be fixed by an .stl file editor.
 
 # The Original Docs
 
