@@ -1,4 +1,10 @@
-# ABB Experimental
+# ABB Experimental - but with my changes
+
+## The changes
+
+This package was written for both the 1.2 meter variant as well as the 1.45 meter variant in mind. The problem is that they did not actually create the .urdf model and .stl model for the 1.45 meter variant. This original repo is also missing the edits I created for the tutorial for WPI's ABB 1600 1.45 variant, so I have decided to just fork this repo and make the changes on this version instead of the original version. This version corresponds to the tutorial that I wrote, so, in case I missed something, the user should not have to edit any of the files that I mention in that tutorial. Anyways, here is the original documentation below
+
+# The Original Docs
 
 [![support level: community](https://img.shields.io/badge/support%20level-community-lightgray.png)](http://rosindustrial.org/news/2016/10/7/better-supporting-a-growing-ros-industrial-software-platform)
 
