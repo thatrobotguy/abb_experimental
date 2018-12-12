@@ -136,7 +136,8 @@
   </joint>
   <joint name="${prefix}joint_3" type="revolute">
     <!-- According to the spec sheet, this is the correct value for the 1.45 meter version. -->
-    <origin xyz="0 0 0.700" rpy="0 0 0"/>
+    <!-- <origin xyz="0 0 0.700" rpy="0 0 0"/> -->
+    <origin xyz="0 0 0.475" rpy="0 0 0"/>
     <!-- This is the original line. It contains the "z" value for the 1.2 meter version of the abb irb 1600 -->
     <!-- <origin xyz="0 0 0.475" rpy="0 0 0"/> -->
     <parent link="${prefix}link_2"/>
