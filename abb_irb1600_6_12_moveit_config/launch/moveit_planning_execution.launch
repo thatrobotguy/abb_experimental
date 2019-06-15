@@ -54,6 +54,9 @@
     </include>
   </group>
 
+  <!-- This is where the urdf files for the robot arm are located. -->
+  <!-- ~/catkin_ws/src/abb_experimental/abb_irb1600_support/urdf -->
+
   <!-- publish the robot state (tf transforms) -->
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 

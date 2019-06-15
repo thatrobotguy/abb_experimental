@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
+<!-- ~/catkin_ws/src/abb_experimental/abb_irb1600_support/urdf -->
 <robot xmlns:xacro="http://ros.org/wiki/xacro" name="irb1600_6_12">
 <xacro:macro name="abb_irb1600_6_12" params="prefix">
   <!-- link list -->
@@ -39,7 +40,7 @@
   </link>
   <link name="${prefix}link_2">
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 -0.143 0" rpy="0 0 ${pi}"/>
       <geometry>
         <mesh filename="package://abb_irb1600_support/meshes/irb1600_6_12/visual/link_2.stl"/>
       </geometry>
@@ -48,7 +49,8 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://abb_irb1600_support/meshes/irb1600_6_12/collision/link_2.stl"/>
+        <!-- Notice how we are using the same file for both visual and collision. We still need to create a proper collision mesh (convex hull of the visual). -->
+        <mesh filename="package://abb_irb1600_support/meshes/irb1600_6_12/visual/link_2.stl"/>
       </geometry>
       <material name="yellow"/>
     </collision>
