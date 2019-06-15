@@ -47,7 +47,7 @@
       <material name="abb_orange"/>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 -0.143 0" rpy="0 0 ${pi}"/>
       <geometry>
         <!-- Notice how we are using the same file for both visual and collision. We still need to create a proper collision mesh (convex hull of the visual). -->
         <mesh filename="package://abb_irb1600_support/meshes/irb1600_6_12/visual/link_2.stl"/>
